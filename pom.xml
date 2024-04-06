@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.javaproject</groupId>
 	<artifactId>database_service_project</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>database_service_project</name>
 	<description>Project for Spring Boot</description>
 	<packaging>jar</packaging>
@@ -77,6 +77,17 @@
     <version>0.8.7</version>
 </dependency>
 	</dependencies>
+    <distributionManagement>
+        <repository>
+        <id>nexus-releases</id>
+        <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
+    
+        <snapshotRepository>
+        <id>nexus-snapshots</id>
+        <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<build>
 		<plugins>
@@ -113,6 +124,7 @@
         </execution>
     </executions>
 </plugin>
+
 		</plugins>
 	</build>
 

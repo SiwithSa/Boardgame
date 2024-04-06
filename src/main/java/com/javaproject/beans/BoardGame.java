@@ -3,8 +3,12 @@ package com.javaproject.beans;
 import java.util.List;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
+@Setter
+@Getter
 public class BoardGame {
 
     private Long id;
@@ -15,5 +19,7 @@ public class BoardGame {
     private String gameType;
 
     private List<Review> reviews;
+
+    
 
 }
